@@ -324,6 +324,11 @@ config SUSPEND_TIME
 
 config FOTA_LIMIT
 	bool "Fota limit information node"
+
+config	BOEFFLA_WL_BLOCKER
+	bool "Boeffla generic wakelock blocker driver"
+	depends on PM
+	default N
 	default n
 	help
 	  Add sysfs to notify limit information to recovery module
